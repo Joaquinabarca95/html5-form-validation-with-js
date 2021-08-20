@@ -11,19 +11,109 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="stylesheet" href="/src/style.css">
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <body>
+      <div class="container-fluid">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="card-title">Payment form example</h5>
+          </div>
+          <div class="card-body">
+              <div class="col-12">
+                  <div class="alert alert-danger" role="alert">
+                      Some fields are missing
+              </div>
+            <form class="row g-3 justify-content-between">
+              <div class="col-md-4">
+                <label for="inputCard4" class="form-label">Card #</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputCard4"
+                  placeholder="XXXXXXXXX"
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="inputCVC4" class="form-label">CVC #</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="inputCVC4"
+                  placeholder="0000"
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="inputAmount4" class="form-label">Amount</label>
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1"><i class="fas fa-dollar-sign"></i></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAmount4"
+                  placeholder="Amount"
+                />
+              </div>
+              </div>
+              <div class="col-6">
+                <label for="inputFirstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="inputFirstName" />
+              </div>
+              <div class="col-6">
+                <label for="inputLastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="inputLastName" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity" />
+              </div>
+              <div class="col-md-3">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Pick a state</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="inputPostalCode" class="form-label"
+                  >Postal Code</label
+                >
+                <input type="text" class="form-control" id="inputPostalCode" />
+              </div>
+              <div class="col-md-6 col-sm-6">
+              <label for="radioOptionsclass" class="form-label">We accept:</label>
+                  <div class="bg-secondary col-md-9 col-8" style="border-radius: 5px;" id="radioOptions">
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1"><i class="fab fa-cc-mastercard"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2"><i class="fab fa-cc-visa"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+                      <label class="form-check-label" for="inlineRadio3"><i class="fab fa-cc-diners-club"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+                      <label class="form-check-label" for="inlineRadio3"><i class="fab fa-cc-amex"></i></label>
+                    </div>
+              </div>
+          </div>               
+          <div class="col-md-6">
+              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <div id="emailHelp" class="form-text">Add any notes here.</div>
+          </div>
+              <div class="col-12 text-end">
+                  <button type="submit" class="btn btn-secondary">Cancel</button>
+                  <button type="submit" class="btn btn-primary">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
   </body>
 </html>
